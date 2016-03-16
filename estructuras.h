@@ -29,7 +29,7 @@ struct idiomas_t {
 	struct planetas_t * planetas;
 } typedef idioma;
 
-alien* crearAlien();
-planeta*  crearPlaneta();
-idioma* crearIdioma();
+void datosAlien(alien*);
+void  datosPlaneta(planeta*);
+void datosIdioma(idioma*);
 

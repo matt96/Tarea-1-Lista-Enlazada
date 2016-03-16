@@ -1,11 +1,15 @@
-#include "funciones.h"
+#include "funciones.c"
 
 int main() {
-// no se puede hacer instacias de las mismas sino se les dara uso
-// las funciones de aqui salen solo para probarlas
-	crearAlien();
-	crearPlaneta();
-	crearIdioma();
+
+	alien* Aliens1=malloc (sizeof(alien));
+	datosAlien(Aliens1);
+	
+	planeta* Planetas1=malloc (sizeof(planeta));
+	datosPlaneta(Planetas1);
+	
+	idioma* Idiomas1=malloc (sizeof(idioma));
+	datosIdioma(Idiomas1);
 
 	alien * lista_aliens;
 	lista_aliens = malloc (sizeof(alien));
