@@ -1,6 +1,12 @@
-#include "estructuras.h"
+#include "funciones.h"
 
-main() {
+int main() {
+// no se puede hacer instacias de las mismas sino se les dara uso
+// las funciones de aqui salen solo para probarlas
+	crearAlien();
+	crearPlaneta();
+	crearIdioma();
+
 	alien * lista_aliens;
 	lista_aliens = malloc (sizeof(alien));
 	strcpy (lista_aliens->nombre , "ET");
@@ -61,4 +67,6 @@ main() {
 		printf ("%s\n",lista_aliens->idiomas->planetas->nombre);
 	} else
 		printf ("ESte idioma no se habla en ningún planeta conocido.\n");
+
+	return 0;
 }
